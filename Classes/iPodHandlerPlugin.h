@@ -1,6 +1,4 @@
 /*
- //  $Id$
- //
  //  Created by Kay Bothfeld on Feb 14, 2013.
  //  Inspired by http://answers.unity3d.com/questions/12777/detecting-ipod-music-playback.html#answer-23043
  //  posted by user "Dimitris 1".
@@ -29,7 +27,12 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+    
+    // Returns true if iPod is playing.
     bool IsIPodMusicPlaying ();
+    
+    // Case sensitive Unity game object and method registering for callbacks.
+    void RegisterUnityIPodCallbackListener (const char* gameObject, const char* method);
     
 #ifdef __cplusplus
 }

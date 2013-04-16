@@ -16,6 +16,7 @@
 		6A68747F16CCF393005AEAC7 /* iPodHandlerPluginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68747E16CCF393005AEAC7 /* iPodHandlerPluginTests.m */; };
 		6A68748B16CCF5AA005AEAC7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A68748A16CCF5AA005AEAC7 /* MediaPlayer.framework */; };
 		6A68749016CD2DEB005AEAC7 /* iPodHandlerPlugin.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6A68748F16CD2DEB005AEAC7 /* iPodHandlerPlugin.mm */; };
+		6A7D8F32171D9CF6008A4678 /* UnityIPodCallbackListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7D8F31171D9CF6008A4678 /* UnityIPodCallbackListener.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		6A68748D16CD2DEB005AEAC7 /* iPodHandlerPlugin-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iPodHandlerPlugin-Prefix.pch"; sourceTree = "<group>"; };
 		6A68748E16CD2DEB005AEAC7 /* iPodHandlerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPodHandlerPlugin.h; sourceTree = "<group>"; };
 		6A68748F16CD2DEB005AEAC7 /* iPodHandlerPlugin.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = iPodHandlerPlugin.mm; sourceTree = "<group>"; };
+		6A7D8F30171D9CF6008A4678 /* UnityIPodCallbackListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnityIPodCallbackListener.h; sourceTree = "<group>"; };
+		6A7D8F31171D9CF6008A4678 /* UnityIPodCallbackListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnityIPodCallbackListener.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +138,8 @@
 				6A68748D16CD2DEB005AEAC7 /* iPodHandlerPlugin-Prefix.pch */,
 				6A68748E16CD2DEB005AEAC7 /* iPodHandlerPlugin.h */,
 				6A68748F16CD2DEB005AEAC7 /* iPodHandlerPlugin.mm */,
+				6A7D8F30171D9CF6008A4678 /* UnityIPodCallbackListener.h */,
+				6A7D8F31171D9CF6008A4678 /* UnityIPodCallbackListener.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -238,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A68749016CD2DEB005AEAC7 /* iPodHandlerPlugin.mm in Sources */,
+				6A7D8F32171D9CF6008A4678 /* UnityIPodCallbackListener.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

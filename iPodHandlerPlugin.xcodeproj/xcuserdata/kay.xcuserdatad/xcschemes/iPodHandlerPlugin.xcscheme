@@ -10,7 +10,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "/Users/kay/Development/git/iPodHandlerPlugin/cp_iPodHandler.sh">
+               scriptText = "/Users/kay/Development/github/iPodHandlerPlugin/cp_iPodHandler.sh">
             </ActionContent>
          </ExecutionAction>
       </PostActions>

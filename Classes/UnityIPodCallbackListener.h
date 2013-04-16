@@ -24,24 +24,30 @@
  //  THE SOFTWARE.
  */
 
-#import "iPodHandlerPlugin.h"
-#import <MediaPlayer/MediaPlayer.h>
-#import "UnityIPodCallbackListener.h"
+#import <Foundation/Foundation.h>
 
-static UnityIPodCallbackListener* callback;
-
-extern "C" {
-    
-    bool IsIPodMusicPlaying () {
-        BOOL isPlaying = NO;
-        MPMusicPlayerController* iPodMusicPlayer = [MPMusicPlayerController iPodMusicPlayer];
-        if (iPodMusicPlayer.playbackState == MPMusicPlaybackStatePlaying) {
-            isPlaying = YES;
-        }
-        return isPlaying;
-    }
-    
-    void RegisterUnityIPodCallbackListener (const char* gameObject, const char* method) {
-        callback = [[UnityIPodCallbackListener alloc] initAll:gameObject method:method];
-    }
+/*!
+ @class		UnityIPodCallbackListener
+ @abstract	Registers for notifications about iPod player status changes and sends a message to the specified
+            Unity game object.
+ */
+@interface UnityIPodCallbackListener : NSObject {
+    MPMusicPlayerController *musicPlayer;
+	/*!
+     @property  gameObject receiving event.
+	 */
+	NSString* gameObject;
+	/*!
+     @property  method to be called on this gameObject.
+	 */
+	NSString* method;
 }
+
+@property (nonatomic, retain) NSString* gameObject;
+@property (nonatomic, retain) NSString* method;
+
+- (void) sendMessage:(NSString*)message;
+
+- (id)initAll:(const char*)gameObjectParam method:(const char*)methodParam;
+
+@end
