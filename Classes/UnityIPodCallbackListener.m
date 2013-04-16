@@ -93,7 +93,7 @@ extern "C" {
 		self.method = [NSString stringWithUTF8String:methodParam];
         musicPlayer = [MPMusicPlayerController iPodMusicPlayer];
         [self registerForMediaPlayerNotifications];
-        NSLog(@"Callback created ");
+//        NSLog(@"Callback created ");
 		return self;
 	} else {
 		NSLog(@"Error: Unable to initialize!");
